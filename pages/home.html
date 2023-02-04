@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Game Title</title>
+	<link rel="stylesheet" type="text/css" href="./Styles/Theme.css" />
+</head>
+
+<body>
+	<main>
+		<h1>Home</h1>
+	</main>
+	<script type="module">
+		import Socket from "./Modules/Socket.js";
+		import nav from "./Modules/nav.js";
+    import header from "./Modules/header.js";
+    import SimpleGreeting from "./Modules/SimpleGreeting.js";
+    header()
+		
+		const socket = new Socket();
+		socket.on("connect", function() {
+			socket.emit("user");
+		});
+		socket.once("user", function(user) {
+			nav(user);
+		});
+	</script>
+  <hr/>
+  <simple-greeting name="Andrew">ff</simple-greeting>
+</body>
+
+</html>

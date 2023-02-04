@@ -1,0 +1,87 @@
+/* the same generic dark blue style theme */
+@import url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css");
+
+* {
+	box-sizing: border-box;
+	scrollbar-color: #223153 transparent;
+}
+
+body {
+	background-color: #0e1525;
+	color: white;
+	font-family: Hack;
+}
+
+nav > a, nav > button {
+	padding: 10px;
+	border-radius: 6px;
+	color: white;
+	text-decoration: none;
+	font: 16px Hack;
+	transition-duration: 0.2s;
+}
+nav > a:hover, nav > button:hover {
+	background-color: #223153;
+	cursor: pointer;
+}
+nav > a:active, nav > button:active {
+	background-color: #2a4074;
+}
+
+nav > button {
+	background-color: #0e1525;
+	color: white;
+	font-family: Hack;
+	border: none;
+}
+
+main {
+	padding: 20px;
+}
+
+button {
+	color: white;
+	font-family: Hack;
+	padding: 10px;
+	border: none;
+	border-radius: 6px;
+	background-color: #223153;
+	transition-duration: 0.2s;
+}
+button:hover {
+	cursor: pointer;
+	background-color: #2a4074;
+}
+button:active {
+	background-color: #365191;
+}
+
+.user, .message {
+	background-color: #2a4074;
+	margin: auto;
+	display: inline-block;
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	transition-duration: 0.2s;
+}
+.user:hover, .message:hover {
+	background-color: #365191;
+}
+.user a, .message a {
+	color: white;
+	text-decoration: none;
+}
+.user + .user, .message + .message {
+	margin-top: 10px;
+}
+.message a {
+	margin-right: 10px;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}

@@ -1,0 +1,12 @@
+export declare function get(...keys: string[]): Promise<any[] | null>;
+export declare function set(...keyValuePairs: any[]): Promise<boolean[]>;
+declare function _delete(...keys: string[]): Promise<boolean[]>;
+export { _delete as delete };
+export declare function list(prefix?: string): Promise<string[]>;
+export declare function getAll(): Promise<object>;
+export declare function cache(): Promise<boolean>;
+export declare function clear(): Promise<boolean[]>;
+export declare function getObject(object: object): Promise<object>;
+export declare function applyObject(object: object): Promise<boolean>;
+declare function _import(url: string): Promise<boolean>;
+export { _import as import };
