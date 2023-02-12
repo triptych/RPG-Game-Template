@@ -17,6 +17,7 @@
 		import nav from "./Modules/nav.js";
     import header from "./Modules/header.js";
     import SimpleGreeting from "./Modules/SimpleGreeting.js";
+    import TopNav from "./Modules/TopNav.js";
     header()
 		
 		const socket = new Socket();
@@ -29,6 +30,8 @@
 	</script>
   <hr/>
   <simple-greeting name="Andrew">ff</simple-greeting>
+  <top-nav></top-nav>
+  
   <script type="module">
     document.getElementsByTagName("simple-greeting")[0].name = user;
   </script>
